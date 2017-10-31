@@ -12,6 +12,7 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import replace from "gulp-replace";
 import cssnano from "cssnano";
+import sass from "gulp-sass";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -19,8 +20,8 @@ const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["scss", "js", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["scss", "js", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -29,6 +30,13 @@ gulp.task("css", () => (
       cssnext(),
       cssnano(),
     ]))
+    .pipe(gulp.dest("./dist/css"))
+    .pipe(browserSync.stream())
+));
+
+gulp.task("scss", () => (
+  gulp.src("./src/scss/*.scss")
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -68,14 +76,15 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
+gulp.task("server", ["hugo", "scss", "cms-assets", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
-    }
+    },
+    open: false
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["scss"]);
   gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });

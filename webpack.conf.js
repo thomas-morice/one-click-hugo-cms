@@ -1,6 +1,8 @@
 import webpack from "webpack";
 import path from "path";
 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 export default {
   module: {
     loaders: [
@@ -22,8 +24,8 @@ export default {
     new webpack.ProvidePlugin({
       "fetch": "imports?this=>global!exports?global.fetch!whatwg-fetch"
     })
-  ],
-
+  ], 
+  
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],

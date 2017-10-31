@@ -1,0 +1,66 @@
+.site-header {
+    height: 60px;
+    background-color: grey;
+
+    &--vivid-violet {
+        background-color: $color-vivid-violet;
+    }
+
+    &--allports {
+        background-color: $color-violet-eggplant;
+    }
+
+    &__inner {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        background: url('../images/logo.svg') no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        width: 40px;
+        height: 60px;
+    }
+
+    &__menu {
+        display: flex;
+        margin-top: -60px;
+        margin-left: 60px;
+        height: 60px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__left-menu {
+        padding: 20px 0;
+    }
+
+    &__menu-element {
+        font-size: 16px;
+        padding: 20px 26px;
+        color: white;
+
+        &--right {
+            padding: 20px 10px;
+        }
+    }
+
+    &__right-menu {
+        align-content: flex-end;
+        min-width: 100px;
+        text-align: right;
+        font-size: 16px;
+        padding: 20px 0;
+        color: white;
+    }
+
+    &__webshop-icon {
+        vertical-align: middle;
+        margin-left: -8px;
+        height: 16px;
+    }
+}

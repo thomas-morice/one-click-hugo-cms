@@ -1,0 +1,122 @@
+// Font
+// -------------------------------
+$font-path: '/fonts';
+//Light font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/light/LabGrotesqueWeb-Light.eot');
+    src: url('#{$font-path}/labgrotesque/light/LabGrotesqueWeb-Light.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/light/LabGrotesqueWeb-Light.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/light/LabGrotesqueWeb-Light.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/light/LabGrotesqueWeb-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+//Light Italic font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/light_italic/LabGrotesqueWeb-LightItalic.eot');
+    src: url('#{$font-path}/labgrotesque/light_italic/LabGrotesqueWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/light_italic/LabGrotesqueWeb-LightItalic.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/light_italic/LabGrotesqueWeb-LightItalic.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/light_italic/LabGrotesqueWeb-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+//Regular Font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/regular/LabGrotesqueWeb-Regular.eot');
+    src: url('#{$font-path}/labgrotesque/regular/LabGrotesqueWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/regular/LabGrotesqueWeb-Regular.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/regular/LabGrotesqueWeb-Regular.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/regular/LabGrotesqueWeb-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Italic Font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/italic/LabGrotesqueWeb-Italic.eot');
+    src: url('#{$font-path}/labgrotesque/italic/LabGrotesqueWeb-Italic.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/italic/LabGrotesqueWeb-Italic.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/italic/LabGrotesqueWeb-Italic.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/italic/LabGrotesqueWeb-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+//Medium Font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/medium/LabGrotesqueWeb-Medium.eot');
+    src: url('#{$font-path}/labgrotesque/medium/LabGrotesqueWeb-Medium.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/medium/LabGrotesqueWeb-Medium.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/medium/LabGrotesqueWeb-Medium.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/medium/LabGrotesqueWeb-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+//Medium Italic Font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/medium_italic/LabGrotesqueWeb-MediumItalic.eot');
+    src: url('#{$font-path}/labgrotesque/medium_italic/LabGrotesqueWeb-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/medium_italic/LabGrotesqueWeb-MediumItalic.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/medium_italic/LabGrotesqueWeb-MediumItalic.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/medium_italic/LabGrotesqueWeb-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+//Black Font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/black/LabGrotesqueWeb-Black.eot');
+    src: url('#{$font-path}/labgrotesque/black/LabGrotesqueWeb-Black.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/black/LabGrotesqueWeb-Black.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/black/LabGrotesqueWeb-Black.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/black/LabGrotesqueWeb-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+//Black Italic font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/black_italic/LabGrotesqueWeb-BlackItalic.eot');
+    src: url('#{$font-path}/labgrotesque/black_italic/LabGrotesqueWeb-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/black_italic/LabGrotesqueWeb-BlackItalic.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/black_italic/LabGrotesqueWeb-BlackItalic.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/black_italic/LabGrotesqueWeb-BlackItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+//Bold font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/bold/LabGrotesqueWeb-Bold.eot');
+    src: url('#{$font-path}/labgrotesque/bold/LabGrotesqueWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/bold/LabGrotesqueWeb-Bold.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/bold/LabGrotesqueWeb-Bold.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/bold/LabGrotesqueWeb-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+//Bold Italic font
+@font-face {
+    font-family: 'lab_grotesque';
+    src: url('#{$font-path}/labgrotesque/bold_italic/LabGrotesqueWeb-BoldItalic.eot');
+    src: url('#{$font-path}/labgrotesque/bold_italic/LabGrotesqueWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/labgrotesque/bold_italic/LabGrotesqueWeb-BoldItalic.woff2') format('woff2'),
+    url('#{$font-path}/labgrotesque/bold_italic/LabGrotesqueWeb-BoldItalic.woff') format('woff'),
+    url('#{$font-path}/labgrotesque/bold_italic/LabGrotesqueWeb-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

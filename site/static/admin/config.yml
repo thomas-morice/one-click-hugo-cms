@@ -1,5 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: thomas-morice/one-click-hugo-cms
+  branch: master
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -33,3 +35,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+      - file: "site/content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Page theme", name: "page_theme", widget: "select", options: ['Select a theme', 'vivid-violet', allports]}
+          - { label: "Title", name: "title", widget: "string"}
+          - name: headline
+            label: Headline
+            widget: object
+            fields:
+              - {label: Headline title, name: title, widget: string}
+              - {label: Headline text, name: text, widget: markdown}
+          - {label: Story image, name: story_image, widget: image, required: false}
