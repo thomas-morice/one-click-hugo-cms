@@ -1,19 +1,24 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<header class="site-header site-header--{{ .Params.page_theme }}" role="banner">
+    
+    <div class="site-header__inner">
+        <div class="site-header__logo"> </div>
 
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
+        <div class="site-header__menu"> 
+            <div class="site-header__left-menu"> 
+                <a href="#" class="site-header__menu-element">Contraception</a>
+                <a href="#" class="site-header__menu-element">The science</a>
+                <a href="#" class="site-header__menu-element">About us</a>
+                <a href="#" class="site-header__menu-element">FAQs</a>
+            </div>
 
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
+            <div class="site-header__right-menu"> 
+                <a href="#" class="site-header__menu-element site-header__menu-element--right">Login</a>
+                <a href="#" class="site-header__menu-element site-header__menu-element--right">Webshop </a>
+                <img class="site-header__webshop-icon" alt="" height="16" src="../img/shopping-cart.svg">
+            </div>
+        </div>
 
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
-
-</nav>
+    </div>
+    
+    <!-- <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong> --> 
+</header>

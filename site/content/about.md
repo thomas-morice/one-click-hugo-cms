@@ -1,4 +1,5 @@
 ---
+type: "about"
 page_theme: vivid-violet
 title: about
 headline:
